@@ -19,6 +19,8 @@
   --our-team-bg: #f5f4fa;
   --border-nav-col: #ececec;
   --border-img-portf: #eeeeee;
+  --icon-team-cont: #afb1b8;
+  --icon-team-cont-accent: #ffffff;
 }
 body {
   background-color: var(--background-color);
@@ -305,6 +307,34 @@ body {
   padding-bottom: 30px;
   padding-top: 30px;
 }
+/* Icons team section */
+.icon-team-borders {
+  display: inline-block;
+
+  /* padding: 0; */
+  border: none;
+  width: 44px;
+  height: 44px;
+  color: var(--icon-team-cont-accent);
+  border-radius: 50%;
+  background-color: #000;
+}
+.icon-team-borders:not(:last-child) {
+  margin-right: 10px;
+}
+.icon-team-contacts {
+  fill: var(--icon-team-cont);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  /* padding-top: 12px;
+  padding-bottom: 12px; */
+}
+.icon-team-contacts:hover,
+.icon-team-focus {
+  fill: var(--icon-team-cont-accent);
+}
+
 /* Footer */
 .footer {
   background-color: var(--footer-color);
