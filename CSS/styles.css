@@ -220,7 +220,7 @@ body {
 /* Icons features section */
 .icon-antenna::before {
   background-image: url(../images/portfolio/icons/antenna.svg);
-  background-size: 70px 70px;
+  background-size: 70px;
 }
 .icon-clock::before {
   background-image: url(../images/portfolio/icons/clocks.svg);
@@ -286,7 +286,7 @@ body {
 }
 .team-section .text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.2;
@@ -297,6 +297,9 @@ body {
 }
 .team-items {
   background-color: var(--background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-items:not(:last-child) {
   margin-right: 30px;
@@ -308,17 +311,22 @@ body {
   padding-top: 30px;
 }
 /* Icons team section */
+.icon-team-div {
+  display: flex;
+  justify-content: center;
+}
 .icon-team-borders {
   display: inline-block;
-
-  /* padding: 0; */
-  border: none;
+  padding: 12px;
+  /* text-align: center; */
+  /* border: none; */
   width: 44px;
   height: 44px;
   color: var(--icon-team-cont-accent);
   border-radius: 50%;
-  background-color: #000;
+  /* background-color: #000; */
 }
+
 .icon-team-borders:not(:last-child) {
   margin-right: 10px;
 }
@@ -326,13 +334,46 @@ body {
   fill: var(--icon-team-cont);
   width: 20px;
   height: 20px;
-  background-size: contain;
-  /* padding-top: 12px;
-  padding-bottom: 12px; */
+  /* background-size: contain; */
 }
+.icon-team-borders:hover,
+.icon-team-borders:focus {
+  background-color: var(--logo-specific-color);
+}
+
 .icon-team-contacts:hover,
-.icon-team-focus {
+.icon-team-contacts:focus {
   fill: var(--icon-team-cont-accent);
+}
+
+/* Clients list */
+.icon-team-com {
+  width: 106px;
+  height: 60px;
+  color: var(--icon-team-cont);
+}
+.clients-section-wrap {
+  padding: 94px 0;
+}
+.clients {
+  display: flex;
+  justify-content: center;
+}
+.clients-text {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.clients-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #000;
+  border-color: var(--icon-team-cont);
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Footer */
