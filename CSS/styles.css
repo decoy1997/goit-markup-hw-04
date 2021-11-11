@@ -123,6 +123,7 @@ body {
   margin-right: 50px;
 }
 /* header contacts */
+
 .contacts {
   color: var(--secondary-text-color);
   letter-spacing: 0.02cm;
@@ -137,6 +138,16 @@ body {
 .contacts:hover,
 .contacts:focus {
   color: var(--logo-specific-color);
+}
+.icon-mail-contacts {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-mail-contacts:hover,
+.icon-mail-contacts:focus {
+  fill: currentColor;
 }
 /* Main title */
 .overlay {
