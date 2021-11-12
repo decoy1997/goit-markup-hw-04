@@ -142,8 +142,6 @@ body {
   color: var(--logo-specific-color);
 }
 .icon-mail-contacts {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -163,6 +161,7 @@ body {
     url(../images/main-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .main-title {
   margin: 0 auto;
