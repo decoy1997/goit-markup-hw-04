@@ -22,12 +22,19 @@
   --icon-team-cont: #afb1b8;
   --icon-team-cont-accent: #ffffff;
   --icon-footer-ellipse: rgba(255, 255, 255, 0.1);
+  --gap: 30px;
+  --item: 1;
 }
 body {
   background-color: var(--background-color);
   font-family: Roboto, sans-serif;
-  letter-spacing: 0.03cm;
+  letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* .section,
 .section.team {
@@ -35,6 +42,17 @@ body {
 } */
 .section {
   padding: 94px 0;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--gap) * -1);
+  margin-left: calc(var(--gap) * -1);
+}
+.grid-item {
+  flex-basis: calc(100% / var(--item) - var(--gap));
+  margin-top: auto;
+  margin-left: auto;
 }
 
 .list {
@@ -105,7 +123,7 @@ body {
 }
 
 .site-nav {
-  letter-spacing: 0.02cm;
+  letter-spacing: 0.02em;
   display: flex;
   margin-left: 93px;
 }
@@ -122,6 +140,7 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--logo-specific-color);
+  /* border-bottom: 1px solid var(--logo-specific-color); */
 }
 .site-nav .link.current {
   color: var(--logo-specific-color);
@@ -134,7 +153,7 @@ body {
 
 .contacts {
   color: var(--secondary-text-color);
-  letter-spacing: 0.02cm;
+  letter-spacing: 0.02em;
   font-size: 14px;
   line-height: 1.15;
   font-weight: 500;
@@ -175,7 +194,7 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  letter-spacing: 0.06cm;
+  letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   max-width: 696px;
@@ -195,7 +214,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.06cm;
+  letter-spacing: 0.06em;
   text-align: center;
   margin: 0 auto;
 }
@@ -522,10 +541,12 @@ body {
 }
 
 /* Main section(Portfolio) */
+
 .portfolio-main-section {
+  margin-bottom: -30px;
+  margin-right: -30px;
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
 }
 .portfolio-img:hover {
   border: 1px solid #eeeeee;
@@ -551,8 +572,9 @@ body {
 }
 .portfolio-img {
   border: 1px solid var(--border-img-portf);
-  margin: 15px;
-  width: 370px;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-bottom: 30px;
+  margin-right: 30px;
 }
 .port-img-descr {
   padding: 20px 24px;
